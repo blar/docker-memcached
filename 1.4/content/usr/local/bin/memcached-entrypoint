@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+
+exec memcached -v -u memcached -o modern -m $MEMCACHED_MEMORY_LIMIT

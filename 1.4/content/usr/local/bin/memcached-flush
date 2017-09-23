@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+
+memcached-command flush_all
