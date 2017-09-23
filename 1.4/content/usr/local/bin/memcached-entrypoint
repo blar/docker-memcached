@@ -1,3 +1,14 @@
 #!/usr/bin/env sh
 
-exec memcached -v -u memcached -o modern -m $MEMCACHED_MEMORY_LIMIT
+set -e
+
+if [ "$1" = "memcached" ]; then
+
+    set -- "$@" -v
+    set -- "$@" -u memcached
+    set -- "$@" -o modern
+    set -- "$@" -m $MEMCACHED_MEMORY_LIMIT
+
+fi; 
+
+exec "$@"

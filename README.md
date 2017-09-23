@@ -15,13 +15,16 @@ Host zu dem sich ``memcached-command`` verbinden soll.
 Standardwert: memcache
 
 ## Befehle
-
-### docker exec $memcached flush
-
-  Leert den Memcache. 
  
-### docker exec $memcache statistics
+### docker exec $container memcached-get $key
 
-  Zeigt Statistiken über die aktuellen Servereigenschaften und den Speicherverbrauch an.
-  
-### docker exec $memcached get $key
+Holt der Wert für $key aus dem Memcache.
+
+### docker exec $container memcached-flush
+
+Leert den Memcache. 
+ 
+### docker exec $container memcached-statistics
+
+Zeigt Statistiken über die aktuellen Servereigenschaften und den Speicherverbrauch an.
+
