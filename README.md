@@ -1,5 +1,7 @@
 # Memcached for Docker
 
+Small image (~ 3MB) for Memcached based on Alpine.
+
 ## Environment variables
 
 ### MEMCACHED_MEMORY_LIMIT
