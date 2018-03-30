@@ -1,3 +1,0 @@
-#!/usr/bin/env sh
-
-memcached-command get $1

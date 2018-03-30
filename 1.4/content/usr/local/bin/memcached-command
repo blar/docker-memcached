@@ -1,3 +1,0 @@
-#!/usr/bin/env sh
-
-echo $1 | nc $MEMCACHED_HOST $MEMCACHED_PORT 2>/dev/null
