@@ -1,4 +1,4 @@
-FROM alpine:3.7
+FROM alpine:3.6
 
 LABEL maintainer="gmblar+github@gmail.com"
 
